@@ -155,13 +155,16 @@ header,
 }
 
 .company-message p {
-    margin-bottom: 1.5em;
     line-height: 21px;
     font-size: 1.1em;
 }
 
-#learn-more-btn {
+.learn-more-btn {
     padding: 9px 28px;
+    margin-top: 1.5em;
+    max-width: 175px;
+    min-width: 150px;
+    height: 40px;
     font-size: 1em;
     text-transform: uppercase;
     background: #e3212b;
@@ -250,10 +253,120 @@ header,
 }
 
 .wave-lines {
-    height: 300px;
+    height: 150px;
     background-image: url("../images/wave-bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.wave-lines-bottom {
+    transform: rotateX(180deg);
+}
+
+/* ==================== */
+/* What's new */
+/* ==================== */
+
+.whats-new-wrapper {
+    max-width: 100%;
+    background: #f5f5f5;
+    margin: 0 0.5em;
+}
+
+.whats-new {
+    max-width: 1240px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whats-new,
+.whats-new-section,
+.long-section,
+.news-block,
+.long-section {
+    display: flex;
+}
+
+.whats-new-section,
+.long-section,
+.short-section {
+    border-radius: 20px;
+}
+
+.block {
+    background: #000;
+    color: #fff;
+    min-height: 403px;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.whats-new-section {
+    width: 100%;
+    /* border: solid 1px red; */
+}
+
+.news-block {
+    gap: 1.5em;
+}
+
+.news-block,
+.whats-new-fullWidth {
+    margin-bottom: 1.5em;
+}
+
+.long-section,
+.short-section {
+    flex-direction: column;
+}
+
+.long-section {
+    width: 66.6%;
+    flex-direction: column;
+}
+
+.short-section {
+    width: 33.3%;
+}
+
+.first-block {
+    background-image: url("../images/give-image-large-screen.jpg");
+}
+
+.second-block {
+    background-image: url("../images/together-we-must-large.png");
+}
+
+.fourth-block {
+    background-image: url("../images/celebrate-large.jfif");
+}
+
+.fifth-block {
+    background-image: url("../images/custom-apparel-large.jfif");
+}
+
+.whats-new-fullWidth {
+    background-image: url("../images/large-img.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.whats-new-fullWidth .full-width-inner-wrapper {
+    min-height: 620px;
+    width: 300px;
+    min-width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.whats-new-fullWidth .huge-section-text {
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 /* ==================== */
