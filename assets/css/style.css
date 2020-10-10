@@ -16,6 +16,7 @@ body {
 
 h1 {
     font-size: 36px;
+    font-weight: 600;
 }
 
 header {
@@ -280,6 +281,10 @@ header,
     align-items: center;
 }
 
+.whats-new-heading {
+    margin-bottom: 1em;
+}
+
 .whats-new,
 .whats-new-section,
 .long-section,
@@ -294,6 +299,10 @@ header,
     border-radius: 20px;
 }
 
+section h2 {
+    line-height: 1.3em !important;
+}
+
 .block {
     background: #000;
     color: #fff;
@@ -306,7 +315,6 @@ header,
 
 .whats-new-section {
     width: 100%;
-    /* border: solid 1px red; */
 }
 
 .news-block {
@@ -366,12 +374,56 @@ header,
 
 .whats-new-fullWidth .huge-section-text {
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 600;
+    line-height: 1.2em;
+    /* border: solid 1px red; */
+}
+
+section h2,
+section h1,
+section p {
+    max-width: 350px;
+    line-height: 1em;
 }
 
 /* ==================== */
-/* media queries */
+/* highlighted product
 /* ==================== */
+
+.highlighted {
+    background-image: url(../images/large_coke.png);
+    background-repeat: no-repeat;
+    background-position: 6.5em 0;
+    background-size: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 782px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.highlighted-info {
+    width: 37%;
+    padding-right: 2em;
+    margin-top: 8em;
+}
+
+.highlighted-info h1,
+section h2,
+.huge-section-text {
+    font-weight: 600 !important;
+    line-height: 1em;
+    margin: 0.3em 0;
+}
+
+.highlighted-info p {
+    line-height: 1em;
+    font-weight: 300;
+}
+
+/* ======================================== */
+/* media queries */
+/* ======================================== */
 
 @media (max-width: 820px) {
     .main-nav li:first-child {
